@@ -11,9 +11,9 @@ class frmPrincipal(object):
         self.form = tkinter.Tk()
         self.size = '640x480'
         self.icon = 'favicon.ico'
-        self.lblWhichMovie = Label()
-        self.txtWhichMovie = Entry()
-        self.btnSearch = Button()
+        self.lblWhichMovie = Label
+        self.txtWhichMovie = Entry
+        self.btnSearch = Button
 
         self.form.title(self.title)
         self.form.geometry(self.size)
@@ -22,8 +22,7 @@ class frmPrincipal(object):
         self.lblWhichMovie.pack(anchor=NW, padx=20, pady=5)
         self.txtWhichMovie = Entry(self.form)
         self.txtWhichMovie.pack(anchor=NW, padx=20, fill=X, pady=2)
-        self.btnSearch = Button(self.form)
-        self.btnSearch.text = 'Busca'
+        self.btnSearch = Button(self.form, text='Busca')
         self.btnSearch.pack(side=TOP, fill=X, padx=20, pady=15)
 
     def show(self):

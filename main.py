@@ -7,11 +7,13 @@ from io import BytesIO
 from urllib.request import urlopen
 import io
 import base64
-from forms.principal_design import frmPrincipal
+from forms.principal import viewPrincipal
 
+def callback(event):
+    print('Click')
 
 def main():
-    frm = frmPrincipal()
+    frm = viewPrincipal()
     frm.show()
     """window = tkinter.Tk()
     window.title('Inicial')
